@@ -20,7 +20,7 @@
                 <div class="d-flex" style="height: 36.4px;">
                     <a href="/posts/{{ $post->id }}" class="btn btn-putline-primary">Show</a>
                     <a href="/posts/{{ $post->id }}/edit" class="btn btn-putline-primary">Edit</a>
-                    <form action="/posts/{{ $post->id }}" method="POST" onsubmit="if(comfirm('Delite? Are you sure?')) { reutn true } else { return false };">
+                    <form action="/posts/{{ $post->id }}" method="POST" onsubmit="if(comfirm('Delite? Are you sure?')) { return true } else { return false };">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-putline-danger">Delete</button>
