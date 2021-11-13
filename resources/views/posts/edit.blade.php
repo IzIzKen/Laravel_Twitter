@@ -17,7 +17,7 @@
     @endif
 
     <form method="POST" action="/posts/{{ $post->id }}">
-        {{ csrf_field() }}
+        @csrf
         <input type="hidden" name="_method" value="PUT">
         <div class="form-group">
             <label for="exampleInputEmail1">Title</label>
