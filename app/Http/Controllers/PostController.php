@@ -90,7 +90,7 @@ class PostController extends Controller
         $post->content = $request->input('content');
         $post->save();
 
-        return redirect()->route('posts.show', ['id' => $post->id])->with('message', 'Post was successfully updated.');
+        return redirect()->route('posts.show', $post->id)->with('message', 'Post was successfully updated.');
     }
 
     /**
