@@ -3,6 +3,7 @@
 @section('title', 'Simple Board')
 
 @section('content')
+
     @if (session('message'))
         {{ session('message') }}
     @endif
