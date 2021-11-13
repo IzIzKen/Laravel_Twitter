@@ -10,7 +10,7 @@
         "production": "cross-env NODE_ENV=production node_modules/cross-env/src/bin/cross-env.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "heroku-postbuild": "npm run production"
     },
-    "devDependencies": {
+    "dependencies": {
         "axios": "^0.21",
         "cross-env": "^7.0.3",
         "laravel-mix": "^6.0.6",

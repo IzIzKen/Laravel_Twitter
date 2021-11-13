@@ -1,4 +1,3 @@
-/node_modules
 /public/hot
 /public/storage
 /storage/*.key
@@ -104,3 +103,4 @@ resources/sass/utilities/_stretched-link.scss
 resources/sass/utilities/_text.scss
 resources/sass/utilities/_visibility.scss
 resources/sass/vendor/_rfs.scss
+node_modules
